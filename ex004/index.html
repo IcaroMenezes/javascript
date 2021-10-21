@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(170, 12, 12);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>InicaALALA</h1>
+    <p>Conforme eu vou digitando vai aparecendo no site</p>
+    <p id="zero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quos molestiae ipsa quod suscipit adipisci excepturi sint pariatur aliquid neque veritatis porro quibusdam et autem cum, recusandae ullam sunt. Architecto.</p>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+        var d = document.getElementById('zero')
+        document.write(d.innerText)
+        d.innerText = 'estou aguardando'
+        /*dá para selecionar usando Tags, Id's, Nomes, Classes, ou com querySelector()*/
+    </script>
+</body>
+</html>
